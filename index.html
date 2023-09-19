@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Viejuners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>El Club Viejuner</h1>
+        <nav>
+            <a href="#" tabindex="1">Formulario</a>
+            <a href="./robo.html" tabindex="2">Robos</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <section id="datosPersonales">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Gregorio" tabindex="3" autofocus>
+                        </li>
+                        <li>
+                            <label for="apellido">Apellidos:</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder="Tremont" tabindex="4">
+                        </li>
+                        <li>
+                            <label for="edad">Edad:</label><br>
+                            <input type="number" id="edad" name="edad" min="60" max="99" placeholder="65" tabindex="5">
+                        </li>
+                        <li>
+                            <p>Género:</p>
+                            <input type="radio" id="hombre" name="genero" value="Hombre" tabindex="6">
+                            <label for="hombre">Hombre</label><br>
+                            <input type="radio" id="mujer" name="genero" value="Mujer" tabindex="6">
+                            <label for="mujer">Mujer</label><br>
+                            <input type="radio" id="noBinario" name="genero" value="No_Binario" tabindex="6">
+                            <label for="noBinario">No binario</label><br>
+                            <input type="radio" id="none" name="genero" value="None" tabindex="6">
+                            <label for="none">Prefiero no decir</label><br>
+                            <input type="radio" id="otro" name="genero" value="" tabindex="6">
+                            <label for="otro">Otro <input type="text" id="otroGenero"></label>
+                        </li>
+                        <li>
+                            <p>Me siento Viejuner:</p>
+                            <input type="checkbox" id="viejuner" name="viejuner" value="Check_Viejuner" tabindex="7">
+                            <label for="viejuner">¡Desde que nací!</label>
+                        </li>
+                        <li>
+                            <p>Cuéntanos sobre ti:</p>
+                            <textarea name="sobreTi" id="sobreTi" cols="50" rows="10" placeholder="¡Yo soy viejuner!" tabindex="8"></textarea>
+                        </li>
+                    </ul>                
+                </fieldset>
+            </section>
+
+            <section id="datosContacto">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <ul>
+                        <li>
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" placeholder="example@example.com" tabindex="9">
+                        </li>
+                        <li>
+                            <label for="telf">Teléfono:</label><br> 
+                            <input type="tel" id="telf" name="telf" placeholder="+34 123456789" tabindex="10">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section id="button">
+                <input type="reset" id="reset" value="Reset" tabindex="11">
+                <input type="submit" id="submit" value="Enviar" tabindex="12">
+            </section>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Robo de Bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Los ladronzuelos de bicicletas</h1>
+        <nav>
+            <a href="./index.html" tabindex="1">Formulario</a>
+            <a href="#"tabindex="2">Robos</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <section id="fechaHora">
+                <fieldset>
+                    <legend>Fecha y hora</legend>
+                    <ul>
+                        <li>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" name="fecha" id="fecha" autofocus tabindex="3">
+                        </li>
+                        <li>
+                            <label for="hora">Hora:</label>
+                            <input type="time" name="hora" id="hora" tabindex="4" value="12:00">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section id="datosBici">
+                <fieldset>
+                    <legend>Datos de la bicicleta</legend>
+                    <ul>
+                        <li>
+                            <label for="colorBici">Color de la bicicleta:</label>
+                            <input type="color" name="colorBici" id="colorBici" tabindex="5">
+                        </li>
+                        <li>
+                            <label for="precioBici">Rango de precio (entre 100€ a 1000€):</label>
+                            <input type="range" name="precioBici" id="precioBici" min="100" max="1000" value="500" step="100" oninput="precio.value=precioBici.value+'€'" tabindex="6">
+                            <output id="precioOutput" name="precio" for="precio">500€</output>
+                        </li>
+                        <li>
+                            <label for="tipoBici">Tipo de bicicleta:</label>
+                            <select name="tipoBici" id="tipoBici" tabindex="7">
+                                <optgroup label="Paseo">
+                                    <option value="senorial">Señorial</option>
+                                    <option value="anti">Anti-plebeyos</option>
+                                    <option value="encimaHombro">PorEncimaDelHombro</option>
+                                </optgroup>
+                                <optgroup label="Montaña">
+                                    <option value="gamusinos">Gamusinos</option>
+                                    <option value="hueleflores">Hueleflores premium</option>
+                                    <option value="fango">Fango lover</option>
+                                </optgroup>
+                                <optgroup label="Carreras">
+                                    <option value="metromedio">Metroymedio</option>
+                                    <option value="tresTarde">3 de la tarde. Fluorescente edition</option>
+                                    <option value="grupitors">Grupitors</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li id="accs">
+                            <label for="accsBici">Accesorios de bicicleta:</label><br>
+                            <select name="accsBici" id="accsBici" size="6" multiple tabindex="8">
+                                <option value="ruedines">Ruedines</option>
+                                <option value="pegatinas">Pegatinas</option>
+                                <option value="cestita">Cestita</option>
+                                <option value="bombaAire">Bomba de aire</option>
+                                <option value="timbre">Timbre</option>
+                                <option value="foco">Foco</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="marca">¿Qué marca era?:</label>
+                            <input list="marca" tabindex="9" placeholder="Marca">
+                            <datalist id="marca">
+                                <option value="specialized">
+                                <option value="trek">
+                                <option value="merida">
+                                <option value="scott">
+                                <option value="giant">
+                                <option value="cube">
+                                <option value="lapierre">
+                                <option value="orbea">
+                                <option value="cannondale">
+                                <option value="bmc">
+                                <option value="canyon">
+                                <option value="look">
+                                <option value="protek">
+                                <option value="megamo">
+                                <option value="pinarello">
+                                <option value="bianchi">
+                                <option value="bh">
+                                <option value="factor">
+                                <option value="ghost">
+                                <option value="cervélo">
+                                <option value="argon">
+                            </datalist>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section id="button">
+                <input type="reset" id="reset" value="Reset" tabindex="10">
+                <input type="submit" id="submit" value="Enviar" tabindex="11">
+            </section>
+        </form>
+    </main>
+</body>
+</html>

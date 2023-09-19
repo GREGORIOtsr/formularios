@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+fieldset {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#reset {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(255, 30, 30, 60);
+}
+
+#submit {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: auto;
+    height: 40px;
+    width: 80px;
+}
+
+#datosPersonales li, #datosContacto li, #fechaHora li, #datosBici li {
+    margin-top: 20px;
+}
+
+#precioOutput {
+    padding: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#accsBici {
+    margin-top: 5px;
+    margin-left: 5px;
+}
