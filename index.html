@@ -22,18 +22,18 @@
                     <ul>
                         <li>
                             <label for="nombre">Nombre:</label><br>
-                            <input type="text" id="nombre" name="nombre" placeholder="Gregorio" tabindex="3" autofocus>
+                            <input type="text" id="nombre" name="nombre" placeholder="Gregorio" tabindex="3" autofocus required>
                         </li>
                         <li>
                             <label for="apellido">Apellidos:</label><br>
-                            <input type="text" id="apellido" name="apellido" placeholder="Tremont" tabindex="4">
+                            <input type="text" id="apellido" name="apellido" placeholder="Tremont" tabindex="4" required>
                         </li>
                         <li>
                             <label for="edad">Edad:</label><br>
-                            <input type="number" id="edad" name="edad" min="60" max="99" placeholder="65" tabindex="5">
+                            <input type="number" id="edad" name="edad" min="60" max="99" placeholder="65" tabindex="5" required>
                         </li>
                         <li>
-                            <p>Género:</p>
+                            <label for="genero">Género</label><br>
                             <input type="radio" id="hombre" name="genero" value="Hombre" tabindex="6">
                             <label for="hombre">Hombre</label><br>
                             <input type="radio" id="mujer" name="genero" value="Mujer" tabindex="6">
@@ -47,8 +47,8 @@
                         </li>
                         <li>
                             <p>Me siento Viejuner:</p>
-                            <input type="checkbox" id="viejuner" name="viejuner" value="Check_Viejuner" tabindex="7">
-                            <label for="viejuner">¡Desde que nací!</label>
+                            <input type="checkbox" id="viejuner" name="viejuner" value="Check_Viejuner" tabindex="7" required>
+                            <label for="viejuner">¡Desde el día que nací!</label>
                         </li>
                         <li>
                             <p>Cuéntanos sobre ti:</p>
@@ -64,11 +64,11 @@
                     <ul>
                         <li>
                             <label for="correo">Correo electrónico:</label><br>
-                            <input type="email" id="correo" name="correo" placeholder="example@example.com" tabindex="9">
+                            <input type="email" id="correo" name="correo" placeholder="example@example.com" tabindex="9" required>
                         </li>
                         <li>
                             <label for="telf">Teléfono:</label><br> 
-                            <input type="tel" id="telf" name="telf" placeholder="+34 123456789" tabindex="10">
+                            <input type="tel" id="telf" name="telf" placeholder="+34 123456789" tabindex="10" required>
                         </li>
                     </ul>
                 </fieldset>
